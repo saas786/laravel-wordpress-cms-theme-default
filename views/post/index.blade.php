@@ -17,7 +17,7 @@
                             <div class="blog-item">
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <a href="{{ \App\Models\Post::link($item) }}">
+                                        <a href="{{ $item->link }}">
                                             @if($item->image_url)
                                                 <img src="{{ asset('storage'.$item->image_url) }}"
                                                      alt="{{ $item->title }}" title="{{ $item->title }}"
@@ -31,7 +31,7 @@
                                     </div>
                                     <div class="col-md-8">
                                         <h3 class="blog-name">
-                                            <a href="{{ \App\Models\Post::link($item) }}">{{ $item->title }}</a>
+                                            <a href="{{ $item->link }}">{{ $item->title }}</a>
                                         </h3>
                                         <p class="blog-info"> {{ $item->created_at->format('d/m/Y H:s') }}</p>
                                         <p class="blog-description">

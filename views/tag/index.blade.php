@@ -16,7 +16,7 @@
                         @foreach ($itemPosts as $item)
                             <li>
                                 <h3 class="blog-name">
-                                    <a href="{{ \App\Models\Post::link($item) }}">{{ $item->title }}</a>
+                                    <a href="{{ $item->link }}">{{ $item->title }}</a>
                                 </h3>
                             </li>
                         @endforeach
