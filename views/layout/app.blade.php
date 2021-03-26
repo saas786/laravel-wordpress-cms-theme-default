@@ -15,15 +15,15 @@
     <link rel="icon" href="{{ !empty($config['favicon']) ? $config['favicon'] : base_url('favicon.ico') }}"
           type="image/x-icon">
 
-    @include('layout.default.layouts.head')
+    @include('layout.default.layout.head')
     @include('site.element.head')
 </head>
 
 <body id="page-top">
-@include('layout.default.layouts.header')
-@include('layout.default.layouts.sidebar')
+@include('layout.default.layout.header')
+@include('layout.default.layout.sidebar')
 <section>@yield('content')</section>
-@include('layout.default.layouts.footer')
+@include('layout.default.layout.footer')
 @include('site.element.alert')
 </body>
 </html>

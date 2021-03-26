@@ -1,4 +1,4 @@
-@extends('layout.default.layouts.app')
+@extends('layout.default.layout.app')
 @section('content')
     <!-- About Section -->
     <section class="page-section bg-primary" id="about">

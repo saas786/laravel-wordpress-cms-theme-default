@@ -1,4 +1,4 @@
-@extends('layout.default.layouts.app')
+@extends('layout.default.layout.app')
 @section('content')
     <article id="content" class="container">
         <div class="main-breadcrumb">

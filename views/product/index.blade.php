@@ -1,4 +1,4 @@
-@extends('layout.default.layouts.app')
+@extends('layout.default.layout.app')
 @section('content')
     <div class="container">
         <table class="table table-hover table-striped">
